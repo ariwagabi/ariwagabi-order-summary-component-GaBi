@@ -1,0 +1,204 @@
+:root
+{
+    --bg-color: #D6E1FF;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --normal: 500;
+    --bold: 700;
+    --bolder: 900;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* outline: 1px solid ; */
+
+}
+
+html,
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    max-width: 375px;
+    margin: 0 auto;
+    background: url(/images/pattern-background-mobile.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--bg-color);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+img
+{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.parent-container
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* outline: 1px solid; */
+}
+
+.container
+{
+    width: 84%;
+    margin: 0 auto;
+}
+
+.hero img
+{
+    border-top-right-radius: 1.263rem;
+    border-top-left-radius: 1.263rem;
+
+}
+
+.white-bg
+{
+    background-color: #fff;
+    border-bottom-right-radius: 1.263rem;
+    border-bottom-left-radius: 1.263rem;
+    padding-bottom: 1rem;
+}
+
+.order-summary
+{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+h1
+{
+    font-size: 1.5rem;
+    font-weight: var(--bolder);
+}
+
+p
+{
+    font-weight: var(--normal);
+    color: var(--desaturated-blue);
+    padding-top: .7rem;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+
+}
+
+.plan
+{
+    margin-left: 1.538rem;
+}
+
+.plan span
+{
+    display: block;
+}
+
+span.plan-text
+{
+    font-weight: var(--bolder);
+}
+
+span.year
+{
+    color: var(--desaturated-blue);
+}
+
+.change
+{
+    margin-left: auto;
+}
+
+.change a
+{
+    color: var(--bright-blue);
+    font-weight: var(--bolder);
+    font-size: .9rem;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+button[type=submit]
+{
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    height: 50px;
+    border-radius: .7rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: var(--bold);
+    margin-top: 1.625rem;
+    -webkit-box-shadow: 0px 23px 37px -13px rgba(56, 41, 224, 0.42);
+    -moz-box-shadow: 0px 23px 37px -13px rgba(56, 41, 224, 0.42);
+    box-shadow: 0px 23px 37px -13px rgba(56, 41, 224, 0.42);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+button[type=button]
+{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    height: 45px;
+    border-radius: .7rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: var(--bolder);
+    color: var(--desaturated-blue);
+    /* opacity: .6; */
+    margin: .625rem 0;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+/* Hover */
+.change a:hover
+{
+    text-decoration: none;
+    opacity: .7;
+}
+
+button[type=submit]:hover
+{
+    /* background-color: var(--pale-blue); */
+    opacity: .7;
+}
+
+button[type=button]:hover
+{
+    color: var(--dark-blue);
+}
+
+/* Desktop View */
+@media screen and (min-width: 1440px)
+{
+
+    html,
+    body
+    {
+        background: url(/images/pattern-background-desktop.svg) no-repeat;
+        background-position: top;
+        background-color: var(--pale-blue);
+    }
+}
